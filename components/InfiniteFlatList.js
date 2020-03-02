@@ -198,9 +198,6 @@ InfiniteFlatList.propTypes = {
 }
 
 const styles = StyleSheet.create({
-    footerContainer: {
-        
-    },
     footerText: {
         fontSize: 14,
         color: '#555555'

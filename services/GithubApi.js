@@ -1,6 +1,8 @@
 import axios from 'axios'
 
-const instance = axios.create({ baseURL: 'https://api.github.com/' })
+const instance = axios.create({ baseURL: 'https://api.github.com/', headers: {
+     "Authorization": "Basic YW1pbmVyb2w6YW1pbmVBQjEw"
+} })
 const parsRepos = (response) => response.data["items"]
 
 export const searchReposAPI = (date, sort, order, perPage, page) => instance.get(`search/repositories`+
